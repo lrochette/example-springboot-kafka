@@ -12,4 +12,6 @@ FROM java:8
 
 # ADD src /code/src
 
-# CMD ["mvn", "test"]
+COPY target/spring-kafka-boot-0.0.1-SNAPSHOT.jar /
+
+ENTRYPOINT ["java", "-jar",  "/spring-kafka-boot-0.0.1-SNAPSHOT.jar"]
