@@ -1,15 +1,15 @@
 FROM java:8
 
-RUN apt-get update
+# RUN apt-get update
 
-RUN apt-get install -y maven
+# RUN apt-get install -y maven
 
-RUN ls -l
+# RUN ls -l
 
-WORKDIR /code
+# WORKDIR /code
 
-ADD pom.xml /code/pom.xml
+# ADD pom.xml /code/pom.xml
 
-ADD src /code/src
+# ADD src /code/src
 
-CMD ["mvn", "test"]
+# CMD ["mvn", "test"]
