@@ -8,8 +8,8 @@ steps:
   clone:
     title: "Cloning repository"
     type: "git-clone"
-    repo: "codefreshdemo/example-springboot-kafka"
-    revision: "master"
+    repo: "${CF_REPO_OWNER}/${{CF_REPO_NAME}}"
+    revision: "${{CF_BRANCH}}"
     stage: "clone"
 
   build_springboot:
