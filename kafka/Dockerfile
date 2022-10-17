@@ -1,7 +1,7 @@
 FROM anapsix/alpine-java
 
-ARG kafka_version=0.10.2.0
-ARG scala_version=2.11
+ARG kafka_version=3.3.1
+ARG scala_version=2.13
 
 MAINTAINER wurstmeister
 
