@@ -39,7 +39,7 @@ steps:
         type: "build"
         registry: docker-lr
         image_name: "lrochette/kafka"
-        working_directory: "${{clone}}/kakfa"
+        working_directory: "${{clone}}/kafka"
         tag: "latest"
         dockerfile: "Dockerfile"
 
