@@ -1,13 +1,14 @@
 FROM anapsix/alpine-java
 
-ARG kafka_version=3.3.1
-ARG scala_version=2.13
+ARG KAFKA_VERSION=3.3.1
+ARG SCALA_VERSION=2.13
 
 MAINTAINER wurstmeister
 
 RUN apk add --update unzip wget curl docker jq coreutils
 
-ENV KAFKA_VERSION=$kafka_version SCALA_VERSION=$scala_version
+ENV KAFKA_VERSION=$KAFKA_VERSION SCALA_VERSION=$SCALA_VERSION
+
 ADD download-kafka.sh /tmp/download-kafka.sh
 RUN chmod a+x /tmp/download-kafka.sh && sync
 RUN /tmp/download-kafka.sh
